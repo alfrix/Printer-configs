@@ -1,0 +1,6 @@
+min_slic3r_version = 2.3.0-alpha4
+0.1.0 Initial
+0.1.1 Remove accelrations and jerk and update mini z height
+0.1.2 Re-Tune after input shapers
+0.1.3 Volcano, let some settings be configured in firmware
+0.1.4 ePet and merge
