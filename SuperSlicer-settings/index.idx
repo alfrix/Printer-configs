@@ -7,3 +7,4 @@ min_slic3r_version = 2.3.0-alpha4
 0.1.5 fine tune ePet
 0.1.6 less bridge fan epet
 0.1.7 tune widths for 0.4n, experimental 0.2 same flowrate perimeters, prevent slicer from adding waits
+0.1.8 epet fist layer temp increase because it tends to not start
