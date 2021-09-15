@@ -10,3 +10,4 @@ min_slic3r_version = 2.3.0-alpha4
 0.1.8 epet fist layer temp increase because it tends to not start
 0.1.9 slight infill overlap, M117
 0.2.0 fix M117
+0.2.1 epet first layer temp tweak
