@@ -16,3 +16,4 @@ min_slic3r_version = 2.3.0-alpha4
 0.2.4 avoid crossing perimeters
 0.2.5 epet needs cooling or it will leak and look bad adhesion is terrible anyways
 0.2.6 overhang speed tweak
+0.2.7 Max flowrate benchmarks
