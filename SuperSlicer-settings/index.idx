@@ -21,3 +21,5 @@ min_slic3r_version = 2.3.0-alpha4
 0.2.9 increase max height i3mini epet less temp with new hotend
 0.3.0 support tweaks
 0.3.1 HIPS
+0.3.2 3n3 PETG
+0.3.3 Adaptive cubic infill, 1 perimeter first layer
