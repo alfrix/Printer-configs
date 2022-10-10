@@ -11,31 +11,13 @@
 [display_status]
 [exclude_object]
 [input_shaper]
-[bed_mesh]
-mesh_min:10,44
-mesh_max:120,225
-probe_count: 5, 5
-fade_end: 10
-split_delta_z: .04
 
-[filament_switch_sensor Optical_filament_switch_sensor]
-switch_pin: ^PB5
-
-[screws_tilt_adjust]
-screw1: 10,-11
-screw1_name: front left
-screw2: 120,-11
-screw2_name: front right
-screw3: 10,175
-screw3_name: rear right
-screw4: 120,175
-screw4_name: rear left
 
 [probe]
 pin: ^PC4
 speed: 5.0
 deactivate_on_each_sample: false
-y_offset: 55
+y_offset: 58
 #menos es mas lejos
 #z_offset = 1.300
 samples: 5
@@ -101,33 +83,33 @@ filament_diameter: 1.750
 heater_pin: PD5
 sensor_type: EPCOS 100K B57560G104F
 sensor_pin: PA7
-#control: pid
-#pid_kp = 24.539
-#pid_ki = 0.730
-#pid_kd = 206.127
+control: pid
+pid_kp = 24.539
+pid_ki = 0.730
+pid_kd = 206.127
 min_temp: 0
 max_temp: 275
-min_extrude_temp: 0
+min_extrude_temp: 190
 
-[heater_fan Hotend y Base]
-pin: PD4
-kick_start_time: 1
-shutdown_speed: 1
+# [heater_fan Hotend y Base]
+# pin: PD4
+# kick_start_time: 1
+# shutdown_speed: 1
 
-[temperature_sensor Base]
+# [temperature_sensor Base]
+# sensor_type: EPCOS 100K B57560G104F
+# sensor_pin: PA6
+
+[heater_bed]
+heater_pin: PD4
 sensor_type: EPCOS 100K B57560G104F
 sensor_pin: PA6
-
-#[heater_bed]
-#heater_pin: PD4
-#sensor_type: EPCOS 100K B57560G104F
-#sensor_pin: PA6
-#control: pid
-#pid_Kp: 54.027
-#pid_Ki: 0.770
-#pid_Kd: 948.182
-#min_temp: 0
-#max_temp: 130
+control: pid
+pid_Kp: 54.027
+pid_Ki: 0.770
+pid_Kd: 948.182
+min_temp: 0
+max_temp: 130
 
 [temperature_sensor Pi]
 sensor_type: temperature_host
@@ -152,8 +134,8 @@ kinematics: cartesian
 #400RPM
 max_velocity: 250
 #travel accel
-max_accel: 4000
-max_accel_to_decel: 2000
+max_accel: 5000
+max_accel_to_decel: 2500
 #200RPM
 max_z_velocity: 20
 max_z_accel: 200
@@ -223,29 +205,4 @@ z_hop: 5
 #*# shaper_freq_x = 92.4
 #*#
 #*# [probe]
-#*# z_offset = 0.810
-#*#
-#*# [extruder]
-#*# control = pid
-#*# pid_kp = 27.166
-#*# pid_ki = 1.449
-#*# pid_kd = 127.341
-#*#
-#*# [bed_mesh default]
-#*# version = 1
-#*# points =
-#*# 	-0.170000, -0.187500, -0.150000, -0.075000, -0.180000
-#*# 	-0.117500, -0.070000, -0.060000, -0.080000, -0.142500
-#*# 	-0.070000, -0.015000, -0.055000, 0.040000, -0.082500
-#*# 	-0.012500, 0.000000, 0.082500, -0.065000, -0.155000
-#*# 	-0.052500, -0.060000, -0.105000, -0.070000, -0.282500
-#*# x_count = 5
-#*# y_count = 5
-#*# mesh_x_pps = 2
-#*# mesh_y_pps = 2
-#*# algo = lagrange
-#*# tension = 0.2
-#*# min_x = 10.0
-#*# max_x = 120.0
-#*# min_y = 44.0
-#*# max_y = 225.0
+#*# z_offset = 0.790
