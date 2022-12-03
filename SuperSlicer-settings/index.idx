@@ -27,3 +27,4 @@ min_slic3r_version = 2.3.0-alpha4
 0.3.5 I3 mini extended bed and revert smaller thumbnail to 300x300
 0.3.6 Add PP
 0.3.7 Add layer info report
+0.3.8 Flex tuneup
