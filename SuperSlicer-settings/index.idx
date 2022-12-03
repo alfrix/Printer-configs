@@ -28,3 +28,4 @@ min_slic3r_version = 2.3.0-alpha4
 0.3.6 Add PP
 0.3.7 Add layer info report
 0.3.8 Flex tuneup
+0.3.9 Retraction only crossing perimeters always use 1mm walls
