@@ -104,10 +104,10 @@ min_extrude_temp: 190
 heater_pin: PD4
 sensor_type: EPCOS 100K B57560G104F
 sensor_pin: PA6
-control: pid
-pid_Kp: 54.027
-pid_Ki: 0.770
-pid_Kd: 948.182
+control: watermark
+# pid_Kp: 54.027
+# pid_Ki: 0.770
+# pid_Kd: 948.182
 min_temp: 0
 max_temp: 130
 
