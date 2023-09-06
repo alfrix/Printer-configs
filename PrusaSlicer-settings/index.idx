@@ -1,4 +1,5 @@
 min_slic3r_version = 2.3.0-alpha4
+0.0.8 bottom-top concentric pattern
 0.0.7 fixup (lower) support and solid accel
 0.0.6 tweak overhang speeds
 0.0.5 more vel but less accel
