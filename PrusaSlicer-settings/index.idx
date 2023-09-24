@@ -1,4 +1,5 @@
 min_slic3r_version = 2.3.0-alpha4
+0.1.0 no thick bridges by default, fan max at layer 4
 0.0.9 removed SS specific settings
 0.0.8 bottom-top concentric pattern
 0.0.7 fixup (lower) support and solid accel
